@@ -10,7 +10,7 @@ public class CorsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**") // Apply to all endpoints
-                .allowedOrigins("https://vote-fe-one.vercel.app") // Allow specific origin
+                .allowedOrigins("https://www.tn2026.online") // Allow specific origin
                 .allowedMethods("*"); // Allow all methods (GET, POST, PUT, DELETE, etc.)
     }
 }
