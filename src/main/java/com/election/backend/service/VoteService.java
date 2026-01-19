@@ -24,7 +24,7 @@ public class VoteService {
 
     public Map<String, Long> getResults() {
         Map<String, Long> results = new HashMap<>();
-        String[] parties = { "DMK", "AIADMK", "TVK", "NTK", "PMK", "BJP" };
+        String[] parties = { "DMK", "ADMK", "TVK", "NTK", "PMK", "BJP" };
         for (String party : parties) {
             results.put(party, voteRepository.countByParty(party));
         }

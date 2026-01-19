@@ -14,7 +14,6 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = { "https://vote-fe-one.vercel.app/" }) // Allow React (Vite)
 public class VoteController {
 
     @Autowired
